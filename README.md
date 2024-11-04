@@ -22,4 +22,21 @@ If a player has no warriors left in the world and passes 3 consecutive turns, th
 
 The player who remains in the world or controls 60% of the world wins the game.
 
-Eğer başka bir çeviri ihtiyacınız olursa, memnuniyetle yardımcı olurum. Ne düşünüyorsunuz?
+WARRIOR TABLE
+
+Warrior	Resource	Health	Attack Target	Damage	Horizontal Range	Vertical Range	Diagonal Range
+Guardian	10	80	All enemies in range	-20 health	1	1	1
+Archer	20	30	3 enemies with highest health in range	-60% health	2	2	2
+Artillery	50	30	1 enemy with highest health in range	-100% health	2	2	0
+Cavalry	30	40	2 most expensive enemies in range	-30 health	0	0	3
+Healer	10	100	3 allied units with lowest health in range	+50% health	2	2	2
+TECHNICAL REQUIREMENTS
+
+Class Structure: All warriors should be derived from a single base class.
+
+Polymorphism: The process of players selecting which warriors to use should be implemented using polymorphism.
+
+World Creation: The game world should be created as a standard 2D vector.
+
+Object-Oriented Principles: All parts of the project should adhere to object-oriented programming principles and good software development practices.
+
