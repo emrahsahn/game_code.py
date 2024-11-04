@@ -38,5 +38,5 @@ The player who remains in the world or controls 60% of the world wins the game.
 2. **Polymorphism:** The process of players selecting which warriors to use should be implemented using polymorphism.
 3. **World Creation:** The game world should be created as a standard 2D vector.
 4. **Object-Oriented Principles:** All parts of the project should adhere to object-oriented programming principles and good software development practices.
-5. 
+
 ![Opera Anlık Görüntü_2024-11-05_000130_BLM232-YZM22820Lab20-201%20(1) pdf](https://github.com/user-attachments/assets/c67fb320-9c70-4119-a3a2-faf04a45b92a)
