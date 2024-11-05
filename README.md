@@ -39,4 +39,9 @@ The player who remains in the world or controls 60% of the world wins the game.
 3. **World Creation:** The game world should be created as a standard 2D vector.
 4. **Object-Oriented Principles:** All parts of the project should adhere to object-oriented programming principles and good software development practices.
 
-![Opera Anlık Görüntü_2024-11-05_000130_BLM232-YZM22820Lab20-201%20(1) pdf](https://github.com/user-attachments/assets/c67fb320-9c70-4119-a3a2-faf04a45b92a)
+## VISUALIZATION 
+![Ekran görüntüsü 2024-11-05 122448](https://github.com/user-attachments/assets/8b58cefa-991f-4e2e-9b01-5ffaf87d139a)
+
+![Ekran görüntüsü 2024-11-05 122826](https://github.com/user-attachments/assets/3081bff6-e0b6-4e65-81c2-4b49c22f5b49)
+![Ekran görüntüsü 2024-11-05 122854](https://github.com/user-attachments/assets/129dc630-a1af-4edd-b07b-fa46af3d4f19)
+![Ekran görüntüsü 2024-11-05 122906](https://github.com/user-attachments/assets/c0fc6839-c0f0-4ab1-94e9-5898996f05b1)
