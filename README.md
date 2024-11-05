@@ -1,43 +1,60 @@
-# LORDS OF THE POLYWARPHISM
+# Lords of the Polywarphism
 
-Within the scope of the project, a multiplayer war game will be developed in a 2-dimensional matrix world.
+## Project Overview
+This project, titled **"Lords of the Polywarphism"**, is a multiplayer war game developed in a 2-dimensional matrix world. The game emphasizes strategic gameplay with different warrior types, each having unique abilities, and supports up to 4 players, where each player takes turns to deploy and control warriors to defeat opponents and dominate the game world.
 
-## GAME DESCRIPTION
+---
 
-The dimensions of the 2-dimensional world will be selected at the beginning of the game. Users will be able to play the game in a user-defined world of 16x16, 24x24, or 32x32. The world's size cannot be smaller than 8x8 or larger than 32x32.
+## Game Description
 
-There will be a minimum of 1 real player and a maximum of 4 players in the game.
+- **World Size:** Players can choose the world size at the start, selecting from 16x16, 24x24, or 32x32 grids. The grid size is restricted between 8x8 (minimum) and 32x32 (maximum).
+- **Player Count:** The game requires at least 1 real player and can support up to 4 players.
+- **Turn-Based Strategy:** Players take turns to produce up to 2 warriors per turn, given they have enough resources.
+- **Warrior Placement:** Players specify the coordinates for each warrior’s placement. Warriors must be placed adjacent to an existing unit.
+- **Resources:** Players gain resources each turn and must manage them strategically.
+- **Game Winning Condition:** The last player remaining or the player controlling 60% of the world wins.
 
-Players will take turns playing the game. When it is a player's turn, they can produce up to 2 warriors within a turn if their resources are sufficient. Warriors can be any type of warrior listed in the table below. If the player wishes, they can produce 2 of the same type of warrior in one turn. If the player wishes, they can produce one warrior or no warriors at all and pass the turn.
+---
 
-Real human players must specify the x and y coordinates of the cell where they will place the warrior in the matrix after selecting the type of warrior from the menu. This process should continue until appropriate selections are made.
+## Warrior Types
 
-Once all players have completed the warrior selection and placement process, all warriors on the field will perform their attacks in the most appropriate way for the first player who placed them.
+| Warrior   | Resource Cost | Health | Attack Target                   | Damage            | Horizontal Range | Vertical Range | Diagonal Range |
+|-----------|---------------|--------|---------------------------------|-------------------|------------------|----------------|----------------|
+| Guardian  | 10            | 80     | All enemies in range           | -20 health        | 1                | 1              | 1              |
+| Archer    | 20            | 30     | 3 enemies with highest health  | -60% health       | 2                | 2              | 2              |
+| Artillery | 50            | 30     | 1 enemy with highest health    | -100% health      | 2                | 2              | 0              |
+| Cavalry   | 30            | 40     | 2 most expensive enemies       | -30 health        | 0                | 0              | 3              |
+| Healer    | 10            | 100    | 3 allied units with lowest health | +50% health   | 2                | 2              | 2              |
 
-Players start the game with a Guardian placed randomly in one of the corners of the matrix. Newly placed warriors can only be placed adjacent to a previously placed warrior. The cell where the new warrior will be placed must either be empty or contain a different type of warrior than the player's own. If a new warrior is placed on top of a previously placed warrior, the old warrior is destroyed, and 80% of the resources used to create the old warrior are transferred to the treasury.
+---
 
-Users gain 10 resources per turn + the number of warriors in the world.
+## Technical Requirements
 
-If a player has no warriors left in the world and passes 3 consecutive turns, they lose the game. If a player loses the game, all their warriors are removed from the world.
+- **Class Structure:** All warrior types inherit from a single base class to ensure modular design.
+- **Polymorphism:** Implement polymorphism to allow players to select different warriors dynamically.
+- **World Creation:** The game world is created as a standard 2D vector.
+- **Object-Oriented Design:** The entire project follows object-oriented programming (OOP) principles and best practices.
 
-The player who remains in the world or controls 60% of the world wins the game.
+---
 
-## WARRIOR TABLE
+## How to Play
 
-| Warrior    | Resource | Health | Attack Target                             | Damage       | Horizontal Range | Vertical Range | Diagonal Range |
-|------------|----------|--------|-------------------------------------------|--------------|------------------|----------------|----------------|
-| Guardian   | 10       | 80     | All enemies in range                      | -20 health   | 1                | 1              | 1              |
-| Archer     | 20       | 30     | 3 enemies with highest health in range    | -60% health  | 2                | 2              | 2              |
-| Artillery  | 50       | 30     | 1 enemy with highest health in range      | -100% health | 2                | 2              | 0              |
-| Cavalry    | 30       | 40     | 2 most expensive enemies in range         | -30 health   | 0                | 0              | 3              |
-| Healer     | 10       | 100    | 3 allied units with lowest health in range | +50% health  | 2                | 2              | 2              |
+1. Set the game world size and player count.
+2. Players take turns, manage resources, and deploy warriors strategically.
+3. When all players have completed their turns, warriors on the field perform actions.
+4. The game continues until a player dominates 60% of the world or is the last one remaining.
 
-## TECHNICAL REQUIREMENTS
+---
 
-1. **Class Structure:** All warriors should be derived from a single base class.
-2. **Polymorphism:** The process of players selecting which warriors to use should be implemented using polymorphism.
-3. **World Creation:** The game world should be created as a standard 2D vector.
-4. **Object-Oriented Principles:** All parts of the project should adhere to object-oriented programming principles and good software development practices.
+## Installation and Setup
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/yourusername/LordsOfThePolywarphism.git
+    ```
+2. Compile and run the project following standard compilation steps (ensure your compiler supports C++ polymorphism if applicable).
+
+
 
 ## VISUALIZATION 
 ![Ekran görüntüsü 2024-11-05 122448](https://github.com/user-attachments/assets/8b58cefa-991f-4e2e-9b01-5ffaf87d139a)
